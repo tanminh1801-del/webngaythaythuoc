@@ -1,0 +1,102 @@
+.comment-section {
+    text-align: center;
+    margin-left: 220px;
+    margin-right: 40px;       /* Canh lề phải đẹp */
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    margin-left: 220px;
+}
+
+/* Danh sách bình luận */
+#comment-list {
+    margin-bottom: 15px;
+}
+
+/* Một bình luận */
+.comment {
+    background: #f0f2f5;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* Hàng input + nút gửi đặt CHUNG 1 dòng */
+.comment-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Ô nhập bình luận */
+.comment-input input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+
+/* Nút gửi */
+.comment-input button {
+    padding: 12px 20px;
+    background: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.comment-input button:hover {
+    background: #0f63d1;
+}
+.comment-section {
+    width: 65%;               /* Giữ khung bình luận gọn – bạn có thể tăng giảm */
+    margin-left: auto;        /* ĐẨY toàn bộ khung sang bên PHẢI */
+    margin-right: 40px;       /* Canh lề phải đẹp */
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+/* Danh sách bình luận */
+#comment-list {
+    margin-bottom: 15px;
+}
+
+/* Một bình luận */
+.comment {
+    background: #f0f2f5;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* Hàng input + nút gửi đặt CHUNG 1 dòng */
+.comment-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Ô nhập bình luận */
+.comment-input input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Nút gửi */
+.comment-input button {
+    padding: 12px 20px;
+    background: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.comment-input button:hover {
+    background: #0f63d1;
+}
