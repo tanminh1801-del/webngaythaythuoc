@@ -93,6 +93,64 @@
         footer a:hover {
             text-decoration: underline;
         }
+        @media (max-width: 768px) {
+
+    /* HEADER full màn hình */
+    header {
+        margin-left: 0;
+        padding: 15px 0;
+    }
+
+    header img {
+        max-width: 80px;
+    }
+
+    header h1 {
+        font-size: 22px;
+        margin: 10px 0 0;
+    }
+
+    /* MENU chuyển thành ngang */
+    nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav a {
+        border: none;
+        border-right: 1px solid #444;
+        font-size: 14px;
+        padding: 10px 12px;
+        text-align: center;
+    }
+
+    nav a:last-child {
+        border-right: none;
+    }
+
+    /* NỘI DUNG full màn hình */
+    .content {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .article img {
+        width: 100%;
+    }
+
+    /* FOOTER full màn hình */
+    footer {
+        margin-left: 0;
+        font-size: 13px;
+        padding: 12px;
+    }
+}
+
     </style>
 </head>
 
@@ -102,7 +160,7 @@
         <h1>NGÀY THẦY THUỐC</h1>
     </header>
     <nav>
-        <a href="baitapnhom.html">Trang chủ</a>
+        <a href="index.html">Trang chủ</a>
         <a href="gioithieu.html">Giới thiệu</a>
         <a href="tintucsk.html">Tin tức, sự kiện</a>
         <a href="danhchocongdong.html">Dành cho cộng đồng</a>
