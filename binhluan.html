@@ -4,170 +4,117 @@
     <meta charset="UTF-8">
     <title>Khung bình luận</title>
     <link rel="stylesheet" href="binhluan.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <style>
-        body {
-            font-family: Arial;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+        * {
+    box-sizing: border-box;
+}
 
-        header {
-            background-color: #005f6a;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            margin-left: 220px;
-        }
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #f4f4f4;
+}
 
-        header img {
-            max-width: 100px;
-        }
+/* ===== MENU DESKTOP ===== */
+nav {
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #333;
+}
 
-    
-        nav {
-            width: 200px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100%;
-            background-color: #333;
-            padding-top: 20px;
-        }
+nav a {
+    display: block;
+    color: white;
+    padding: 14px;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+}
 
-        nav a {
-            display: block;
-            color: white;
-            padding: 14px;
-            text-decoration: none;
-            border-bottom: 1px solid #444;
-        }
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
 
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
+/* ===== HEADER ===== */
+header {
+    margin-left: 220px;
+    background-color: #005f6a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
 
-    
-        .content {
-            margin-left: 220px;
-            padding: 20px;
-        }
+header img {
+    max-width: 100px;
+}
 
-        .article {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-           
-        }
+/* ===== CONTENT ===== */
+.content, .article, .comment-section {
+    margin-left: 220px;
+    padding: 20px;
+}
 
-        .article h1 {
-            color: #005f6a;
-        }
+.article {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
 
-        .article p {
-            line-height: 1.6;
-        }
+.article img {
+    max-width: 100%;
+    height: auto;
+}
 
-    
-        footer {
-            text-align: center;
-            background-color: #005f6a;
-            color: white;
-            padding: 15px;
-            margin-left: 220px;
-            font-size: 14px;
-        }
+/* ===== FOOTER ===== */
+footer {
+    margin-left: 220px;
+    background-color: #005f6a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
 
-        footer p {
-            margin: 6px 0;
-        }
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
 
-        footer a {
-            color: #ffeb3b;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 768px) {
-
-    /* Header full màn hình */
-    header {
-        margin-left: 0;
-        padding: 15px 0;
-    }
-
-    header img {
-        max-width: 80px;
-    }
-
-    header h1 {
-        font-size: 22px;
-        margin-top: 10px;
-    }
-
-    /* Menu chuyển thành ngang */
+    /* Menu ngang */
     nav {
         position: relative;
         width: 100%;
         height: auto;
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
-        padding: 0;
+        flex-wrap: wrap;
     }
 
     nav a {
-        border-bottom: none;
-        border-right: 1px solid #444;
+        border: none;
         font-size: 14px;
         padding: 10px 12px;
-        text-align: center;
     }
 
-    nav a:last-child {
-        border-right: none;
-    }
-
-    /* Nội dung bình luận full màn hình */
+    /* Reset margin */
+    header,
     .content,
-    .comment-section {
+    .article,
+    .comment-section,
+    footer {
         margin-left: 0;
         padding: 15px;
     }
 
-    .comment-input {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .comment-input input {
-        width: 100%;
-        font-size: 16px;
-        padding: 10px;
-    }
-
-    .comment-input button {
-        width: 100%;
-        padding: 10px;
-        font-size: 16px;
-    }
-
-    /* Footer full màn hình */
-    footer {
-        margin-left: 0;
-        font-size: 13px;
-        padding: 12px;
+    header h1 {
+        font-size: 22px;
     }
 }
 
-
-    </style>
+  </style>
 </head>
 
 <body>

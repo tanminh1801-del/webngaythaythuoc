@@ -2,88 +2,117 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tin tức - Kỷ niệm 70 năm Ngày Thầy thuốc Việt Nam</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-        }
-        h1 {
-            color: #2a6bbf;
-        }
-        .image {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .image img {
-            max-width: 100%;
-        }
-        .date {
-            color: #666;
-            font-style: italic;
-        }
-        @media (max-width: 768px) {
+       * {
+    box-sizing: border-box;
+}
 
-    /* Header full màn hình */
-    header {
-        margin-left: 0;
-        padding: 15px 0;
-    }
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #f4f4f4;
+}
 
-    header img {
-        max-width: 80px;
-    }
+/* ===== MENU DESKTOP ===== */
+nav {
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #333;
+}
 
-    header h1 {
-        font-size: 22px;
-        margin-top: 10px;
-    }
+nav a {
+    display: block;
+    color: white;
+    padding: 14px;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+}
 
-    /* Menu chuyển thành ngang */
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* ===== HEADER ===== */
+header {
+    margin-left: 220px;
+    background-color: #005f6a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header img {
+    max-width: 100px;
+}
+
+/* ===== CONTENT ===== */
+.content, .article, .comment-section {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.article {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.article img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    margin-left: 220px;
+    background-color: #005f6a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    /* Menu ngang */
     nav {
         position: relative;
         width: 100%;
         height: auto;
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
-        padding: 0;
+        flex-wrap: wrap;
     }
 
     nav a {
-        display: inline-block;
-        border-bottom: none;
-        border-right: 1px solid #444;
-        padding: 10px 12px;
+        border: none;
         font-size: 14px;
-        text-align: center;
+        padding: 10px 12px;
     }
 
-    nav a:last-child {
-        border-right: none;
-    }
-
-    /* Nội dung */
-    .content {
+    /* Reset margin */
+    header,
+    .content,
+    .article,
+    .comment-section,
+    footer {
         margin-left: 0;
         padding: 15px;
     }
 
-    .article img {
-        width: 100% !important;
-    }
-
-    /* Footer full màn hình */
-    footer {
-        margin-left: 0;
-        padding: 12px;
-        font-size: 13px;
+    header h1 {
+        font-size: 22px;
     }
 }
-    </style>
+</style>
 </head>
 <body>
 
