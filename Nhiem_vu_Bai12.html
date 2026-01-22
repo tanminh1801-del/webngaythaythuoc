@@ -25,6 +25,64 @@
             color: #666;
             font-style: italic;
         }
+        @media (max-width: 768px) {
+
+    /* Header full màn hình */
+    header {
+        margin-left: 0;
+        padding: 15px 0;
+    }
+
+    header img {
+        max-width: 80px;
+    }
+
+    header h1 {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+    /* Menu chuyển thành ngang */
+    nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav a {
+        display: inline-block;
+        border-bottom: none;
+        border-right: 1px solid #444;
+        padding: 10px 12px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    nav a:last-child {
+        border-right: none;
+    }
+
+    /* Nội dung */
+    .content {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .article img {
+        width: 100% !important;
+    }
+
+    /* Footer full màn hình */
+    footer {
+        margin-left: 0;
+        padding: 12px;
+        font-size: 13px;
+    }
+}
     </style>
 </head>
 <body>

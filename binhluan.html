@@ -95,7 +95,7 @@
         }
         @media (max-width: 768px) {
 
-    /* HEADER full màn hình */
+    /* Header full màn hình */
     header {
         margin-left: 0;
         padding: 15px 0;
@@ -107,10 +107,10 @@
 
     header h1 {
         font-size: 22px;
-        margin: 10px 0 0;
+        margin-top: 10px;
     }
 
-    /* MENU chuyển thành ngang */
+    /* Menu chuyển thành ngang */
     nav {
         position: relative;
         width: 100%;
@@ -122,7 +122,7 @@
     }
 
     nav a {
-        border: none;
+        border-bottom: none;
         border-right: 1px solid #444;
         font-size: 14px;
         padding: 10px 12px;
@@ -133,23 +133,39 @@
         border-right: none;
     }
 
-    /* NỘI DUNG full màn hình */
-    .content {
+    /* Nội dung bình luận full màn hình */
+    .content,
+    .comment-section {
         margin-left: 0;
         padding: 15px;
     }
 
-    .article img {
-        width: 100%;
+    .comment-input {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
-    /* FOOTER full màn hình */
+    .comment-input input {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .comment-input button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    /* Footer full màn hình */
     footer {
         margin-left: 0;
         font-size: 13px;
         padding: 12px;
     }
 }
+
 
     </style>
 </head>

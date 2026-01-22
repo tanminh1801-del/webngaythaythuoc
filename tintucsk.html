@@ -62,7 +62,6 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
-            margin-left: 220px;
         }
 
         .article h1 {
@@ -95,9 +94,9 @@
         footer a:hover {
             text-decoration: underline;
         }
-        @media (max-width: 768px) {
+@media (max-width: 768px) {
 
-    /* HEADER full màn hình */
+    /* Header */
     header {
         margin-left: 0;
         padding: 15px 0;
@@ -109,47 +108,50 @@
 
     header h1 {
         font-size: 22px;
-        margin: 10px 0 0;
+        margin-top: 10px;
     }
 
-    /* MENU chuyển thành ngang */
+    /* Menu chuyển ngang */
     nav {
         position: relative;
         width: 100%;
         height: auto;
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-wrap: wrap;
         padding: 0;
     }
 
     nav a {
-        border: none;
-        border-right: 1px solid #444;
-        font-size: 14px;
+        display: inline-block;
         padding: 10px 12px;
-        text-align: center;
+        font-size: 14px;
+        border-bottom: none;
+        border-right: 1px solid #444;
     }
 
     nav a:last-child {
         border-right: none;
     }
 
-    /* NỘI DUNG full màn hình */
-    .content {
+    /* Nội dung */
+    .content,
+    .article {
         margin-left: 0;
         padding: 15px;
     }
 
     .article img {
         width: 100%;
+        height: auto;
+        border-radius: 8px;
     }
 
-    /* FOOTER full màn hình */
+    /* Footer */
     footer {
         margin-left: 0;
-        font-size: 13px;
         padding: 12px;
+        font-size: 13px;
     }
 }
 
